@@ -1,0 +1,214 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Catalog page (mounted at /catalog) */
+body.catalog {
+  overflow: auto;
+  background: #0b0b0b;
+  color: #eaeaea;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+body.catalog #game {
+  height: auto;
+  min-height: 100%;
+}
+
+body.catalog a {
+  color: #9ad0ff;
+  text-decoration: none;
+}
+
+body.catalog a:hover {
+  text-decoration: underline;
+}
+
+body.catalog code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+body.catalog .catalog-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 16px 56px;
+  box-sizing: border-box;
+}
+
+body.catalog .catalog-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 18px;
+}
+
+body.catalog .catalog-header h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 650;
+  letter-spacing: 0.2px;
+}
+
+body.catalog .catalog-subtitle {
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+body.catalog .catalog-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+body.catalog .catalog-btn {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: #eaeaea;
+  padding: 7px 10px;
+  border-radius: 9px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+body.catalog .catalog-btn:hover {
+  background: rgba(255, 255, 255, 0.09);
+}
+
+body.catalog .catalog-btn-secondary {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+body.catalog .catalog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+body.catalog .catalog-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+body.catalog .catalog-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+body.catalog .catalog-edit-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 8px;
+  align-items: center;
+}
+
+body.catalog .catalog-label {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+body.catalog .catalog-input,
+body.catalog .catalog-select,
+body.catalog .catalog-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #eaeaea;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+body.catalog .catalog-textarea {
+  resize: vertical;
+  line-height: 1.35;
+}
+
+body.catalog .catalog-name {
+  font-size: 16px;
+  font-weight: 650;
+}
+
+body.catalog .catalog-id {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+body.catalog .catalog-message-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 10px 0 8px;
+}
+
+body.catalog .catalog-sprite-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 64px repeat(3, 80px);
+  gap: 6px 8px;
+  align-items: center;
+}
+
+body.catalog .catalog-grid-header,
+body.catalog .catalog-grid-row-header {
+  font-size: 11px;
+  opacity: 0.75;
+}
+
+body.catalog .catalog-grid-header {
+  text-align: center;
+}
+
+body.catalog .catalog-grid-row-header {
+  text-align: right;
+  padding-right: 6px;
+}
+
+body.catalog .catalog-grid-corner {
+  height: 1px;
+}
+
+body.catalog .catalog-sprite-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+body.catalog img.catalog-sprite {
+  image-rendering: pixelated;
+  width: 48px; /* 3× scale of 16 */
+  height: 72px; /* 3× scale of 24 */
+}
