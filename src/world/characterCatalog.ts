@@ -47,38 +47,36 @@ export const CHARACTER_CATALOG: CharacterCatalogEntry[] = [
   {
     id: 'alberto',
     name: 'Alberto',
-    spriteFolder: '19',
-    message: ['AR: WILL YOU JOIN ME FOR AN IDEATION SESSION?'],
+    spriteFolder: '14',
+    message: ['ALBERTO: WILL YOU JOIN ME FOR AN IDEATION SESSION?'],
   },
   {
     id: 'simon',
     name: 'Simon',
-    spriteFolder: '18',
-    message: ['SE: DID YOU WATCH MY LATEST LOOM?'],
+    spriteFolder: '16',
+    message: ['SIMON: DID YOU WATCH MY LATEST LOOM?'],
   },
   {
     id: 'jade',
     name: 'Jade',
-    spriteFolder: '16',
-    message: ["JY: I'M RUNNING A USER TESTING SESSION AND CAN'T TALK NOW."],
+    spriteFolder: '13',
+    message: ["JADE: I'M RUNNING A USER TESTING SESSION AND CAN'T TALK NOW."],
   },
 
   // Padua (2)
   {
     id: 'padua_01',
     name: 'Padua 01',
-    spriteFolder: '13',
+    spriteFolder: '16',
     message: [
-      'SOME PLACES HOLD YOU GENTLY, EVEN YEARS LATER.',
-      'I LEARNED QUIET PATIENCE ON THESE STREETS.',
-      'I STILL WALK SLOWLY WHEN I NEED TO REMEMBER.',
+      'MARCO: JUST GOT BACK FROM DUBLIN. ENOUGH GUINNESS FOR NOW.',
     ],
   },
   {
     id: 'padua_02',
     name: 'Padua 02',
     spriteFolder: '14',
-    message: ['AT HOME, SMALL THINGS FELT HUGE.', 'KINDNESS WAS OFTEN SILENT.'],
+    message: ['ALE: WISH I COULD PLAY AGE OF EMPIRES NOW.'],
   },
 
   // Milan (5)
